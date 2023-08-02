@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+.main {
+    display: flex;
+}
+
 .telephone {
     width: 280px;
     height: 600px;
@@ -19,6 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transform: translateX(290px);
 }
 
 /* ----- Header ----- */
@@ -313,14 +318,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    transform: translateY(-570px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-body:hover .front-cards {
-    transform: translateY(-570px) translateX(440px);
-    opacity: 1;
+    transform: translateX(-470px) translateY(180px);
 }
 
 .fornt__box {
@@ -600,20 +598,14 @@ body:hover .front-cards {
     background-color: rgb(13, 255, 0);
 }
 
-body:hover .credit-card {
-    opacity: 1;
-    transform: translateX(1010px) translateY(-720px);
-}
-
 .credit-card {
     width: 350px;
     height: 220px;
     background-color: rgb(226, 165, 103);
-    transform: translateY(-720px) translateX(1300px);
     border-radius: 15px;
-    opacity: 0;
-    transition: 0.4s;
     cursor: pointer;
+    transform: translateX(-250px) translateY(420px);
+    transition: 0.5s;
 }
 
 .credit-card:hover {
@@ -669,10 +661,24 @@ body:hover .credit-card {
     background-color: rgb(228, 126, 25);
     border-radius: 15px;
     transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .credit-card:hover .line-1 {
     background-color: rgb(125, 35, 214);
+}
+
+.line-1__txt {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.credit-card:hover .line-1__txt {
+    opacity: 1;
 }
 
 .line-2 {
@@ -681,10 +687,24 @@ body:hover .credit-card {
     background-color: rgb(228, 126, 25);
     border-radius: 15px;
     transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .credit-card:hover .line-2 {
     background-color: rgb(125, 35, 214);
+}
+
+.line-2__txt {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.credit-card:hover .line-2__txt {
+    opacity: 1;
 }
 
 .credit-card__lines-box {
@@ -695,20 +715,62 @@ body:hover .credit-card {
 
 .line-box-1 {
     background-color: #fff;
-    height: 10px;
+    height: 13px;
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-box-1__txt {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.credit-card:hover .line-box-1__txt {
+    opacity: 1;
 }
 
 .line-box-2 {
     background-color: #fff;
-    height: 10px;
+    height: 13px;
     width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-box-2__txt {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.credit-card:hover .line-box-2__txt {
+    opacity: 1;
 }
 
 .line-box-3 {
     background-color: #fff;
-    height: 10px;
+    height: 13px;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-box-3__txt {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.credit-card:hover .line-box-3__txt {
+    opacity: 1;
 }
 
 .credit-crad__line {
@@ -761,4 +823,113 @@ body:hover .credit-card {
 .credit-card__button:hover {
     background-color: rgb(125, 35, 214);
     transform: scale(1.2) translateY(30px) translateX(20px);
+}
+
+.bags-contant {
+    height: 400px;
+    transform: translateY(300px) translateX(-100px);
+}
+
+.ggg {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform: translateY(-50px);
+    cursor: pointer;
+}
+
+.contant__item-1 {
+    width: 80px;
+    position: absolute;
+    content: '';
+    right: 90px;
+    top: 270px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bags-contant:hover .contant__item-1 {
+    right: 20px;
+    top: 150px;
+    transform: rotate(360deg);
+}
+
+.contant__item-2 {
+    width: 150px;
+    position: absolute;
+    content: '';
+    right: 280px;
+    top: 150px;
+    transition: 0.5s;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.bags-contant:hover .contant__item-2 {
+    top: -20px;
+    right: 490px;
+    transform: rotate(360deg);
+}
+
+.contant__item-3 {
+    width: 100px;
+    position: absolute;
+    content: '';
+    right: 150px;
+    top: 240px;
+    z-index: -1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bags-contant:hover .contant__item-3 {
+    top: 100px;
+    transform: rotate(-360deg);
+}
+
+.contant__item-4 {
+    width: 100px;
+    position: absolute;
+    content: '';
+    right: 205px;
+    top: 260px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bags-contant:hover .contant__item-4 {
+    top: 380px;
+    transform: rotate(-360deg);
+}
+
+.contant__item-5 {
+    width: 120px;
+    position: absolute;
+    content: '';
+    right: 280px;
+    top: 255px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.bags-contant:hover .contant__item-5 {
+    top: 390px;
+    right: 300px;
+    transform: rotate(360deg);
+}
+
+.contant__item-6 {
+    width: 100px;
+    position: absolute;
+    content: '';
+    right: 370px;
+    top: 255px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bags-contant:hover .contant__item-6 {
+    top: 200px;
+    right: 500px;
+    transform: rotate(360deg);
 }
