@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transform: translateX(290px);
+    transform: translateX(460px);
 }
 
 /* ----- Header ----- */
@@ -318,7 +318,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    transform: translateX(-470px) translateY(180px);
+    transform: translateX(-130px) translateY(180px);
 }
 
 .fornt__box {
@@ -604,7 +604,7 @@
     background-color: rgb(226, 165, 103);
     border-radius: 15px;
     cursor: pointer;
-    transform: translateX(-250px) translateY(420px);
+    transform: translateX(90px) translateY(420px);
     transition: 0.5s;
 }
 
@@ -827,7 +827,7 @@
 
 .bags-contant {
     height: 400px;
-    transform: translateY(300px) translateX(-100px);
+    transform: translateY(300px) translateX(250px);
 }
 
 .ggg {
@@ -851,7 +851,7 @@
 .bags-contant:hover .contant__item-1 {
     right: 20px;
     top: 150px;
-    transform: rotate(360deg);
+    transform: rotate(400deg);
 }
 
 .contant__item-2 {
@@ -866,9 +866,9 @@
 }
 
 .bags-contant:hover .contant__item-2 {
-    top: -20px;
-    right: 490px;
-    transform: rotate(360deg);
+    top: -15px;
+    right: 450px;
+    transform: rotate(320deg);
 }
 
 .contant__item-3 {
@@ -883,8 +883,8 @@
 }
 
 .bags-contant:hover .contant__item-3 {
-    top: 100px;
-    transform: rotate(-360deg);
+    top: 80px;
+    transform: rotate(-390deg);
 }
 
 .contant__item-4 {
@@ -898,8 +898,8 @@
 }
 
 .bags-contant:hover .contant__item-4 {
-    top: 380px;
-    transform: rotate(-360deg);
+    top: 400px;
+    transform: rotate(370deg);
 }
 
 .contant__item-5 {
@@ -914,8 +914,8 @@
 
 .bags-contant:hover .contant__item-5 {
     top: 390px;
-    right: 300px;
-    transform: rotate(360deg);
+    right: 400px;
+    transform: rotate(-390deg);
 }
 
 .contant__item-6 {
@@ -931,5 +931,38 @@
 .bags-contant:hover .contant__item-6 {
     top: 200px;
     right: 500px;
-    transform: rotate(360deg);
+    transform: rotate(390deg);
+}
+
+.contant__item-7 {
+    width: 80px;
+    position: absolute;
+    content: '';
+    transition: 0.5s;
+    right: 100px;
+    top: 280px;
+    z-index: -1;
+}
+
+.bags-contant:hover .contant__item-7 {
+    top: 380px;
+    right: 30px;
+    transform: rotate(290deg);
+}
+
+.main__button {
+    height: 70px;
+    width: 350px;
+    transform: translateX(-580px) translateY(200px);
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(#d740ee, #ee3c7b);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main__button:hover {
+    box-shadow: 0 5px 20px #d740ee, 0 -5px 30px #ee3c7b;
 }
